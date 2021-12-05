@@ -44,7 +44,7 @@ Concepts include: OOP (Class, Inheritance), turtle module, List, Tuple, Loops, S
 - We need to position the squares next to each other, for that we create a list STARTING_POSITIONS as constant, containing tuples representing the position of each square.
 - We append the new_segment to the segments list.
 
-<h3>Task - 2 🛠️ Move the snake : <img src="https://media3.giphy.com/media/cZRV5iQPg7dh2Ffsgg/giphy.gif?cid=790b7611a1fa2708942f22fe728d4350b9975da4452ac4ce&rid=giphy.gif&ct=s" width ="50"></h3>
+<h3>Task - 2 🛠️ Move the snake : <img src="https://media3.giphy.com/media/cZRV5iQPg7dh2Ffsgg/giphy.gif?cid=790b7611a1fa2708942f22fe728d4350b9975da4452ac4ce&rid=giphy.gif&ct=s" width ="60"></h3>
 
 - Goal is to move our snake automatically across the screen without having to do anything.
 - One might think of an obvious way, i.e. using a while loop to move the turtle forward by a certain distance.
@@ -60,19 +60,19 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 
 - Move method (snake.py) tells the last segment to move to the position of the 2nd last segment and so on. 
 
-<h3>Task - 3 🛠️ Control the snake : <img src="https://media4.giphy.com/media/ej15KjYzfDdxckdVS2/giphy.gif?cid=790b7611baa63c79d6f2932b30622b0837c5e02169e37d32&rid=giphy.gif&ct=s" width ="50"></h3>
+<h3>Task - 3 🛠️ Control the snake : <img src="https://media4.giphy.com/media/ej15KjYzfDdxckdVS2/giphy.gif?cid=790b7611baa63c79d6f2932b30622b0837c5e02169e37d32&rid=giphy.gif&ct=s" width ="40"></h3>
 
 - We control the snake by using the concept of key binding which is going to get the screen to listen for Up, Down, Left ,and Right keystrokes. It is going to call the desired methods in the snake class.
 - We need to consider the exception that the snake can't go back on itself. The head is not permitted to change to opposite directions as in the official snake game. 
 
-<h3>Task - 4 🛠️ Detect collision with food : <img src="https://media3.giphy.com/media/l0ExqU7rlzaFUSicw/giphy.gif?cid=790b76113a78af591eb48d64132d5a9e4f4e4857a98b620c&rid=giphy.gif&ct=s" width ="50"></h3>
+<h3>Task - 4 🛠️ Detect collision with food :  <img src="https://media3.giphy.com/media/l0ExqU7rlzaFUSicw/giphy.gif?cid=790b76113a78af591eb48d64132d5a9e4f4e4857a98b620c&rid=giphy.gif&ct=s" width ="50"></h3>
 
 - We make our Food class (food.py) to inherit from the turtle class, such that the food class posses all the capabilities of the turtle class, along with additional properties, such that it behaves like an actual piece of food. We use the concept of inheritance.
 - We define the methods shape, shapesize (10 X 10), penup, color, speed(fastest), goto etc.
 - Additionally, we use the random module to generate food at a random position within the screen dimension (refresh method).
 - We use the distance method to check if the distance between the head of the snake & the food are less than a certain amount, then it is pretty likely that the snake head is now colliding with the food. Everytime this happens, we call the refresh method from the food class.
 
-<h3>Task - 5 🛠️ Create a scoreboard & keep score :<img src="https://media3.giphy.com/media/eerYQwIuHp36dV5Umk/giphy.gif?cid=ecf05e47ajxkza7khy9ggdlvd6t58v64ardbm1p606szsst3&rid=giphy.gif&ct=s" width="60"></h3>
+<h3>Task - 5 🛠️ Create a scoreboard & keep score :<img src="https://media3.giphy.com/media/eerYQwIuHp36dV5Umk/giphy.gif?cid=ecf05e47ajxkza7khy9ggdlvd6t58v64ardbm1p606szsst3&rid=giphy.gif&ct=s" width="70"></h3>
 
 - We desire to write some text in our program that keeps track of the score, of how many pieces of food we have actually managed to eat.
 - We make our Scoreboard class (scoreboard.py) to inherit from the turtle class.
@@ -80,7 +80,7 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 - We use the functions update_scoreboard() & increase_score().
 
 <h3>Task - 6 🛠️ When should the game end ? <img src="https://media0.giphy.com/media/8v7YgcIe9S676Y5486/giphy.gif?cid=ecf05e47g56xs9upztytvv3iyx6v6hy4oa2r2z56o7snooyo&rid=giphy.gif&ct=s" width="50"></h3>
-<h4>Task - 6.1 🛠️ Detect collision with wall : <img src="https://media3.giphy.com/media/3EkGMb61KiDdC7PmhM/giphy.gif?cid=ecf05e47y7eexb0ma5s9hc1vhdckna4tfd6ty2l3u9bd1b28&rid=giphy.gif&ct=s" width="70"></h4>
+<h4>Task - 6.1 🛠️ Detect collision with wall : <img src="https://media3.giphy.com/media/3EkGMb61KiDdC7PmhM/giphy.gif?cid=ecf05e47y7eexb0ma5s9hc1vhdckna4tfd6ty2l3u9bd1b28&rid=giphy.gif&ct=s" width="85"></h4>
 
 - Aim is to create a boundary along the screen dimension, such that as soon as the snake head touches that position, it should detect collision, hence game over.
 - With the help of xcor() & ycor(), we create a boundary. When the snake hits the boundary, basically meaning the snake has hit the wall, the game_is_on flag is set to false.
@@ -93,13 +93,13 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 
 - We need to figure out how to detect when the snake collides with its own tail.
 
-<h4>Hold up ! We are yet to figure out "how to make my snake grow longer ? "<img src="https://media1.giphy.com/media/1yNfVG94Zuy2Rqt6My/giphy.gif?cid=790b761166ad353e76e104d2134afc7d3c5f280f1ac7a8c1&rid=giphy.gif&ct=s" width="60"></h4>
+<h4>Hold up ! We are yet to figure out "how to make my snake grow longer ? "<img src="https://media1.giphy.com/media/1yNfVG94Zuy2Rqt6My/giphy.gif?cid=790b761166ad353e76e104d2134afc7d3c5f280f1ac7a8c1&rid=giphy.gif&ct=s" width="65"></h4>
 <p>In the snake game, the snake gets longer each time it eats food. As the snake gets longer & longer, its more likely that at some point, the head might hit some part of the tail. This means "GAME OVER". Hence, first we need to extend the snake everytime it eats.</p>
 
 1. In the snake.py, we create extend(), which gets hold, the position of the last segment using the segments list. It is in this position where a new segment gets added. 
 2. In the main.py, everytime snake head collides with the food, not only do we refresh the food, but also call the extend(), inorder to extend the snake.
 
-<h4>Let's get back to tail collision :  <img src="https://media3.giphy.com/media/60XzbpMZMF4yYr88BK/giphy.gif?cid=ecf05e47d78vbcgdhc820rc8jez8y8oto0sa898qbsw9rr69&rid=giphy.gif&ct=s" width="70"></h4>
+<h4>Let's get back to tail collision :  <img src="https://media3.giphy.com/media/60XzbpMZMF4yYr88BK/giphy.gif?cid=ecf05e47d78vbcgdhc820rc8jez8y8oto0sa898qbsw9rr69&rid=giphy.gif&ct=s" width="75"></h4>
 
 - In the main.py, using the slicing concept on our segments list, we get hold of everything that starts off at position 1 till the end.
 - Then we can use that segment to loop through it & then check every segment in the tail against the distance to the head.
@@ -108,7 +108,7 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 <img src="https://github.com/Sikta2002/Snake-Game-Using-Python/blob/main/Img4.png" width="400" height="350">
 </div>
 
-<h4 align = "center"><img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="60">OUR GAME IS READY !<img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="60"></h4>
+<h4 align = "center"><img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="70">OUR GAME IS READY !<img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="70"></h4>
 <h2>Things we learnt 🕮️</h2>
 
 - How to break down a large project into smaller different tasks, making the project easier to understand and implement. 🧐
