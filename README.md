@@ -1,5 +1,5 @@
 <h1>The Snake Game  <img src="https://media3.giphy.com/media/KbUEFowFNOLSAsHT7u/giphy.gif?cid=ecf05e47511r4uttayzwitfjif67w9se04hg6jlc2ss4xhij&rid=giphy.gif&ct=s" width="75"></h1>
-<p>Classic <a href="https://en.wikipedia.org/wiki/Snake_(video_game_genre)">Snake Game</a> coded in Python using the Turtle module.<br><br>
+<p>Classic <a href="https://en.wikipedia.org/wiki/Snake_(video_game_genre)">Snake Game</a> coded in Python using the <a href="https://docs.python.org/3/library/turtle.html"> Turtle module</a>.<br><br>
 Concepts include: OOP (Class, Inheritance), turtle module, List, Tuple, Loops, Slicing.</p>
 
 <h2>About the Game 👾 </h2>
@@ -12,7 +12,7 @@ Concepts include: OOP (Class, Inheritance), turtle module, List, Tuple, Loops, S
 - The final score is based on the food eaten by the snake.
 
 <div align="center">
-<img src="C:\Users\KIIT\Desktop\Img1.png" width="400" height="350">
+<img src="https://github.com/Sikta2002/Snake-Game-Using-Python/blob/main/Img1.png" width="400" height="350">
 </div>
 
 <h2>Setup <img src="https://camo.githubusercontent.com/63371d36886ee658f5a97401f393e1ab1684b2fd3de674b8f5efc7d410b2a3d0/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f57556c706c634d704f43456d5447427442572f67697068792e676966" width= "50"></h2>
@@ -49,7 +49,7 @@ Concepts include: OOP (Class, Inheritance), turtle module, List, Tuple, Loops, S
 - Goal is to move our snake automatically across the screen without having to do anything.
 - One might think of an obvious way, i.e. using a while loop to move the turtle forward by a certain distance.
 <div align="center">
-<img src="C:\Users\KIIT\Desktop\Img2.png" width="400" height="350">
+<img src="https://github.com/Sikta2002/Snake-Game-Using-Python/blob/main/Img2.png" width="400" height="350">
 </div>
 
 - Just by looking at this we know, this is not the outcome we are aiming for. We go ahead by first pulling the penup (to disperse the drawn line).
@@ -86,7 +86,7 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 - With the help of xcor() & ycor(), we create a boundary. When the snake hits the boundary, basically meaning the snake has hit the wall, the game_is_on flag is set to false.
 - We use the game_over method (scoreboard.py), inorder to display "GAME OVER" message on the screen.
 <div align="center">
-<img src="C:\Users\KIIT\Desktop\Img3.png" width="400" height="350">
+<img src="https://github.com/Sikta2002/Snake-Game-Using-Python/blob/main/Img3.png" width="400" height="350">
 </div>
 
 <h4>Task - 6.2 🛠️ Detect collision with tail : <img src="https://media2.giphy.com/media/L4aQFYRCkz4DVKPHpk/giphy.gif?cid=790b7611c247db66c11afeda6783ae1a4d642ca695e06100&rid=giphy.gif&ct=s" width="50"></h4>
@@ -105,7 +105,7 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 - Then we can use that segment to loop through it & then check every segment in the tail against the distance to the head.
 - We do not start from position 0 as we don't want to check head colliding with itself.
 <div align="center">
-<img src="C:\Users\KIIT\Desktop\Img4.png" width="400" height="350">
+<img src="https://github.com/Sikta2002/Snake-Game-Using-Python/blob/main/Img4.png" width="400" height="350">
 </div>
 
 <h4 align = "center"><img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="60">OUR GAME IS READY !<img src="https://media0.giphy.com/media/jpEE9SqP7NAVyK87EQ/giphy.gif?cid=ecf05e472a170odx1xlz2phyfhyhc1xir42jangj5f7srey7&rid=giphy.gif&ct=s" width="60"></h4>
@@ -116,4 +116,4 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 - How Object - Oriented Programming concepts make our lives easier. 😝
 - How the <b>Snake Game</b> can never get old. ✨
 
-<h3 align = "center">Will add more features soon 🏃<br><br>🦄 Thanks for Visiting ! 🦄</h3>
+<h3 align = "center">🏃 Will add more features soon 🏃<br><br>🦄 Thanks for Visiting ! 🦄</h3>
