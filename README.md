@@ -80,7 +80,7 @@ To fix this, we can use the concept of moving forward, as in our 3rd segment can
 - We use the functions update_scoreboard() & increase_score().
 
 <h3>Task - 6 🛠️ When should the game end ? <img src="https://media0.giphy.com/media/8v7YgcIe9S676Y5486/giphy.gif?cid=ecf05e47g56xs9upztytvv3iyx6v6hy4oa2r2z56o7snooyo&rid=giphy.gif&ct=s" width="50"></h3>
-<h4>Task - 6.1 🛠️ Detect collision with wall : <img src="https://media3.giphy.com/media/3EkGMb61KiDdC7PmhM/giphy.gif?cid=ecf05e47y7eexb0ma5s9hc1vhdckna4tfd6ty2l3u9bd1b28&rid=giphy.gif&ct=s" width="85"></h4>
+<h4>Task - 6.1 🛠️ Detect collision with wall : <img src="https://media3.giphy.com/media/1nvrlYOXSsaZqdHTQB/giphy.gif?cid=ecf05e47q39t2kmoz2mnqp5xa53w888rwv9byvoasf24xqyh&rid=giphy.gif&ct=s" width="85"></h4>
 
 - Aim is to create a boundary along the screen dimension, such that as soon as the snake head touches that position, it should detect collision, hence game over.
 - With the help of xcor() & ycor(), we create a boundary. When the snake hits the boundary, basically meaning the snake has hit the wall, the game_is_on flag is set to false.
